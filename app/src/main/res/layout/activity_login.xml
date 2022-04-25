@@ -7,6 +7,7 @@
     android:orientation="vertical"
     android:weightSum="100"
     tools:context=".LoginActivity"
+    android:background="@color/primaryLightColor"
 
     >
 
@@ -52,6 +53,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="login"
+            android:textColor="@color/secondaryTextColor"
+            android:backgroundTint="@color/secondaryColor"
             />
     </LinearLayout>
 
@@ -62,6 +65,7 @@
             android:text="New here? Register"
             android:textSize="20sp"
             android:gravity="center"
+            android:textColor="@color/primaryTextColor"
 
             />
     </LinearLayout>
