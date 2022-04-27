@@ -55,14 +55,16 @@ public class RegisterActivity extends AppCompatActivity implements AdapterView.O
             }
 
 
-           User user =new User(getValue(username),getValue(password),getValue(petsAge),getValue(petsName),petTypeContainer);
-            UsersDao usersDao = UserDatabase.getDatabaseInstance(this).usersDao;
+           User user =new User(getValue(username),getValue(password),getValue(petsName),petTypeContainer,getValue(petsAge));
+            UsersDao usersDao = UserDatabase.getDatabaseInstance(this).usersDao();
 
             UserDatabase.databaseWriteExecutor.execute(()->{
-               usersDao.insert(user);
+                usersDao.insert(user);
+
                 runOnUiThread(()->{
                     Toast.makeText(this, "Welcome to Petetite ", Toast.LENGTH_SHORT).show();
                     finish();
+
                 });
             });
 
