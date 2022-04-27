@@ -14,7 +14,7 @@ import java.util.concurrent.Executors;
 
 @Database(entities = {User.class},version = 1)
 public abstract class UserDatabase extends RoomDatabase {
-    public abstract UsersDao usersDao;
+    public  UsersDao usersDao;
 
     private static final int NUMBER_OF_THREADS = 2;
     public static final ExecutorService databaseWriteExecutor =

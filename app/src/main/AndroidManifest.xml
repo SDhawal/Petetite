@@ -10,10 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Petetite">
         <activity
-            android:name=".RegisterActivtiy"
+            android:name=".MedicineActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".FoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DeWarmingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VaccineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WaterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BathActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +36,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

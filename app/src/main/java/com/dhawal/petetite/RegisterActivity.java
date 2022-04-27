@@ -1,6 +1,6 @@
 package com.dhawal.petetite;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -11,9 +11,12 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
+import com.dhawal.petetite.Database.Dao.UsersDao;
+import com.dhawal.petetite.Database.Entity.User;
+import com.dhawal.petetite.Database.UserDatabase;
 import com.google.android.material.textfield.TextInputLayout;
 
-public class RegisterActivtiy extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+public class RegisterActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     private TextInputLayout username, password, confirmPassword, petsName, petsAge;
     private Spinner petType;
     private Button register;
@@ -22,7 +25,7 @@ public class RegisterActivtiy extends AppCompatActivity implements AdapterView.O
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register_activtiy);
+        setContentView(R.layout.activity_register_activity);
 
         username = findViewById(R.id.register_username);
         password = findViewById(R.id.register_password);
@@ -31,12 +34,6 @@ public class RegisterActivtiy extends AppCompatActivity implements AdapterView.O
         petsName = findViewById(R.id.register_pet_name);
         petType = findViewById(R.id.register_pet_type);
         register = findViewById(R.id.register_register);
-
-        confirmPassword.setOnFocusChangeListener((v, hasFocus) -> {
-            if (!password.getEditText().getText().equals(confirmPassword.getEditText().getText())) {
-                confirmPassword.setError("Passwords did not match");
-            }
-        });
 
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
@@ -48,12 +45,26 @@ public class RegisterActivtiy extends AppCompatActivity implements AdapterView.O
         //main validations
         register.setOnClickListener(v->{
             if (isAllInformationFilled(username,password,confirmPassword,petsAge,petsName)){
+                Toast.makeText(this, "All fields are mandatory", Toast.LENGTH_SHORT).show();
                 return;
             }
 
             if(!isPasswordMatched(password,confirmPassword)){
+                Toast.makeText(this, "password not matched", Toast.LENGTH_SHORT).show();
                 return;
             }
+
+
+           User user =new User(getValue(username),getValue(password),getValue(petsAge),getValue(petsName),petTypeContainer);
+            UsersDao usersDao = UserDatabase.getDatabaseInstance(this).usersDao;
+
+            UserDatabase.databaseWriteExecutor.execute(()->{
+               usersDao.insert(user);
+                runOnUiThread(()->{
+                    Toast.makeText(this, "Welcome to Petetite ", Toast.LENGTH_SHORT).show();
+                    finish();
+                });
+            });
 
 
         });
@@ -72,7 +83,7 @@ public class RegisterActivtiy extends AppCompatActivity implements AdapterView.O
         boolean errorFound =false;
         for(TextInputLayout view : views){
             String valueEntered = view.getEditText().getText().toString();
-            if(valueEntered.isEmpty()&&petTypeContainer.isEmpty()){
+            if(valueEntered.isEmpty()){
                 Toast.makeText(this, "All the fields are mandatory", Toast.LENGTH_SHORT).show();
                 errorFound=true;
             }else{

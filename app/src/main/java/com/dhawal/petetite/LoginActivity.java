@@ -23,7 +23,7 @@ TextView goToRegister;
         goToRegister = findViewById(R.id.login_register);
 
         goToRegister.setOnClickListener(v->{
-            Intent intent = new Intent(this,RegisterActivtiy.class);
+            Intent intent = new Intent(this, RegisterActivity.class);
             startActivity(intent);
         });
 
