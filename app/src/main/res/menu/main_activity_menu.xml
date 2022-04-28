@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Android"
+        android:id="@+id/appBarMenu_android"
+        app:showAsAction="always"
+        android:orderInCategory="10"
+        android:icon="@drawable/pet"
+        >
+    <menu>
+    <item
+        android:title="Edit Profile"
+        android:id="@+id/menu_editProfile"
+        android:orderInCategory="10"
+        />
+    <item
+        android:title="Logout"
+        android:id="@+id/menu_logout"
+        android:orderInCategory="20"
+        />
+
+
+    </menu>
+    </item>
+
+</menu>
