@@ -51,7 +51,8 @@
             android:layout_weight="1"
             android:textSize="20sp"
             android:gravity="center"
-            tools:text="@tools:sample/lorem"
+            android:text="HH:MM-AM"
+            android:textStyle="bold"
             />
             <Button
                 android:id="@+id/food_change_morning_time"
@@ -91,7 +92,8 @@
                 android:layout_weight="1"
                 android:textSize="20sp"
                 android:gravity="center"
-                tools:text="@tools:sample/lorem"
+                android:text="HH:MM-AM"
+                android:textStyle="bold"
                 />
             <Button
                 android:id="@+id/food_change_afternoon_time"
@@ -129,7 +131,8 @@
                 android:layout_weight="1"
                 android:textSize="20sp"
                 android:gravity="center"
-                tools:text="@tools:sample/lorem"
+                android:text="HH:MM-AM"
+                android:textStyle="bold"
                 />
             <Button
                 android:id="@+id/food_change_night_time"

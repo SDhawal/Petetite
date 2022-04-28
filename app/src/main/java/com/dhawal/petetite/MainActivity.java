@@ -63,7 +63,10 @@ CardView food_card,water_card,vaccine_card,deWarming_card,bath_card,medical_card
             startActivity(intent);
         });
 
-
+        bath_card.setOnClickListener(v->{
+            Intent intent = new Intent(this,BathActivity.class);
+            startActivity(intent);
+        });
 
     }
     public void setPetName(){
