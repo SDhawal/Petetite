@@ -20,7 +20,9 @@
             android:exported="false" />
         <activity
             android:name=".VaccineActivity"
-            android:exported="false" />
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".WaterActivity"
             android:exported="false" />

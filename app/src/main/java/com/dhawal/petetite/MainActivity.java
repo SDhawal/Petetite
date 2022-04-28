@@ -50,6 +50,15 @@ CardView food_card,water_card,vaccine_card,deWarming_card,bath_card,medical_card
             startActivity(intent);
         });
 
+        vaccine_card.setOnClickListener(v->{
+            Intent intent = new Intent(this,VaccineActivity.class);
+            startActivity(intent);
+        });
+
+        deWarming_card.setOnClickListener(v->{
+            Intent intent = new Intent(this,DeWarmingActivity.class);
+            startActivity(intent);
+        });
 
 
 
@@ -58,9 +67,4 @@ CardView food_card,water_card,vaccine_card,deWarming_card,bath_card,medical_card
         petsName.setText(user.getPetsName()+"'s");
     }
 
-    @Override
-    protected void onStart() {
-
-        super.onStart();
-    }
 }
