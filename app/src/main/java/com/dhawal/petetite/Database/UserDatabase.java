@@ -16,6 +16,7 @@ import java.util.concurrent.Executors;
 public abstract class UserDatabase extends RoomDatabase {
     public abstract  UsersDao usersDao();
 
+
     private static final int NUMBER_OF_THREADS = 2;
     public static final ExecutorService databaseWriteExecutor =
             Executors.newFixedThreadPool(NUMBER_OF_THREADS);

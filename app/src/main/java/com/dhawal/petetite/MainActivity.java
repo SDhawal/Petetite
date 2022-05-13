@@ -3,21 +3,18 @@ package com.dhawal.petetite;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.dhawal.petetite.Database.Dao.UsersDao;
 import com.dhawal.petetite.Database.Entity.User;
 import com.dhawal.petetite.Database.UserDatabase;
 
-import java.util.ArrayList;
+
 
 public class MainActivity extends AppCompatActivity {
     private User user;
@@ -69,6 +66,9 @@ CardView food_card,water_card,vaccine_card,deWarming_card,bath_card,medical_card
         });
 
     }
+
+
+
     public void setPetName(){
         petsName.setText(user.getPetsName()+"'s");
     }

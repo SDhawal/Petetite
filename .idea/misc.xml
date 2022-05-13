@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/dhawa/AndroidStudioProjects/Reza/Petetite/app/src/main/res/drawable/ic_launcher_logo_background.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/dhawa/AndroidStudioProjects/Reza/Petetite/app/src/main/res/layout/activity_bath.xml" value="0.3223958333333333" />
+        <entry key="..\:/Users/dhawa/AndroidStudioProjects/Reza/Petetite/app/src/main/res/layout/activity_de_warming.xml" value="0.3223958333333333" />
+        <entry key="..\:/Users/dhawa/AndroidStudioProjects/Reza/Petetite/app/src/main/res/layout/activity_edit_profile.xml" value="0.3223958333333333" />
+        <entry key="..\:/Users/dhawa/AndroidStudioProjects/Reza/Petetite/app/src/main/res/layout/activity_food.xml" value="0.15833333333333333" />
+        <entry key="..\:/Users/dhawa/AndroidStudioProjects/Reza/Petetite/app/src/main/res/layout/activity_login.xml" value="0.3223958333333333" />
+        <entry key="..\:/Users/dhawa/AndroidStudioProjects/Reza/Petetite/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/dhawa/AndroidStudioProjects/Reza/Petetite/app/src/main/res/layout/activity_register_activity.xml" value="0.3223958333333333" />
+        <entry key="..\:/Users/dhawa/AndroidStudioProjects/Reza/Petetite/app/src/main/res/layout/activity_register_activtiy.xml" value="0.3223958333333333" />
+        <entry key="..\:/Users/dhawa/AndroidStudioProjects/Reza/Petetite/app/src/main/res/layout/activity_vaccine.xml" value="0.3223958333333333" />
+        <entry key="..\:/Users/dhawa/AndroidStudioProjects/Reza/Petetite/app/src/main/res/layout/activity_water.xml" value="0.3223958333333333" />
+        <entry key="..\:/Users/dhawa/AndroidStudioProjects/Reza/Petetite/app/src/main/res/layout/main_select_options.xml" value="0.22" />
+        <entry key="..\:/Users/dhawa/AndroidStudioProjects/Reza/Petetite/app/src/main/res/menu/main_activity_menu.xml" value="0.3223958333333333" />
+        <entry key="..\:/Users/dhawa/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_spinner_dropdown_item.xml" value="0.3223958333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
