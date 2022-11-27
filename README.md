@@ -3,6 +3,12 @@
 ### Technologies Used : <br> Android Studios (JAVA) <br> Room database <br>
 #### I am still working on this application and keep on improving it to provide best user experience.
 ##
+## PROTOTYPE IN FIGMA
+##
+![Frame 1](https://user-images.githubusercontent.com/28450025/204137695-49014574-1b2d-47c0-8f61-d9cc815c29fa.png)
+##
+## Original Application
+##
 ![GIF-220825_132754](https://user-images.githubusercontent.com/28450025/186758516-1c8cb610-6053-4746-95d2-939e34694df7.gif) <br> <br>
 ##
 ![petetite](https://user-images.githubusercontent.com/28450025/186758548-6567a5e0-306f-4f04-b710-5cd0573b493e.gif) <br> <br>
